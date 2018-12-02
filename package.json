@@ -1,0 +1,27 @@
+{
+  "name": "graphql-express-server",
+  "version": "1.0.0",
+  "description": "\"# graphql-server\" \r com express.js\r node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erislandio/graphql-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erislandio/graphql-server/issues"
+  },
+  "homepage": "https://github.com/Erislandio/graphql-server#readme",
+  "dependencies": {
+    "add": "^2.0.6",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "yarn": "^1.12.3"
+  }
+}
