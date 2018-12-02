@@ -1,5 +1,5 @@
 const {
-   GraphqlString,
+   GraphQLString,
    GraphQLSchema,
    GraphQLObjectType
 } = require('graphql')
@@ -10,9 +10,9 @@ module.exports = new GraphQLSchema({
         name: 'RootQueryType',
         fields: {
             companhia: {
-                type: GraphqlString,
+                type: GraphQLString,
                 resolve() {
-                    return 'Aplle'
+                    return 'Aplle';
                 }
             }
         }
