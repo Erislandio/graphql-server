@@ -1,18 +1,34 @@
 const {
    GraphQLString,
    GraphQLSchema,
-   GraphQLObjectType
+   GraphQLObjectType,
+   GraphQLInt
 } = require('graphql')
 
+
+const CompanhiaType = new GraphQLObjectType({
+    name: 'Compranhia',
+    fields: {
+        id: {
+            type: GraphQLInt
+        },
+        nome: {
+            type: GraphQLString 
+        }
+    }
+});
 
 module.exports = new GraphQLSchema({
     query: new GraphQLObjectType({
         name: 'RootQueryType',
         fields: {
             companhia: {
-                type: GraphQLString,
+                type: CompanhiaType,
                 resolve() {
-                    return 'Aplle';
+                    return {
+                        id: 123,
+                        nome: 'Aplle',
+                    }
                 }
             }
         }
